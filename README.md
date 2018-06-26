@@ -1,7 +1,9 @@
 # siamese_rit_change
 
    `python3 -m pip install --index-url https://test.pypi.org/simple/ siamese-rit-change`
+   
    `python3`
+   
    `import siamese_rit_change`
    
 
