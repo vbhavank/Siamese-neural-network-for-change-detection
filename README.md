@@ -1,6 +1,6 @@
 # siamese_rit_change
 
-   'python3 -m pip install --index-url https://test.pypi.org/simple/ siamese-rit-change'
+   `python3 -m pip install --index-url https://test.pypi.org/simple/ siamese-rit-change`
    
 
 We present a patch-based algorithm for detecting structural changes in satellite imagery using a Siamese neural network. The two channels of our Siamese network are based on the VGG16 architecture with shared weights. Changes between the target and reference images are detected with a fully connected decision network that was trained on DIRSIG simulated samples and achieved a high detection rate. Alternatively, a change detection approach based on Euclidean distance between deep convolutional features achieved very good results with minimal supervision.
