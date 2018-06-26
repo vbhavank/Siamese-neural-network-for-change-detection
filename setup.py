@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="Siamese_network_change",
+    name="Siamese_change",
     version="0.0.1",
     author="Bhavan Vasu, Faiz Ur Rahman, Andreas Savakis",
     author_email="bxv7657@rit.edu",
