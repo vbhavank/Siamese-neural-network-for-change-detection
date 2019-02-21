@@ -1,5 +1,8 @@
 
    
+Implementation of "SIAMESE NETWORK WITH MULTI-LEVEL FEATURES FOR PATCH-BASED CHANGE DETECTION IN SATELLITE IMAGERY"
+[1] Faiz Ur Rahman, Bhavan Kumar Vasu, Jared Van Cor, John Kerekes, Andreas Savakis, "Siamese Network with Multi-level Features for Patch-based Change Detection in Satellite Imagery", IEEE SigPort, 2018. [Online]. Available: http://sigport.org/3825. Accessed: Feb. 21, 2019.
+
 
 We present a patch-based algorithm for detecting structural changes in satellite imagery using a Siamese neural network. The two channels of our Siamese network are based on the VGG16 architecture with shared weights. Changes between the target and reference images are detected with a fully connected decision network that was trained on DIRSIG simulated samples and achieved a high detection rate. Alternatively, a change detection approach based on Euclidean distance between deep convolutional features achieved very good results with minimal supervision.
 
