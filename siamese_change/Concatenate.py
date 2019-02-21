@@ -33,24 +33,9 @@ def feature_extractor(img1,img2):
     feature_1=siamese_network(img1)
     feature_2=siamese_network(img2)
     
-    #final_features = 
-   # print f1(0)
-    #print f2.shape
     
     
     final_features = concatenate_features(feature_1,feature_2,3)
-    #print type(final_features)
-    #data_tf = tf.convert_to_tensor(data_np, np.float32)
-
-    #final_features = tf.convert_to_tensor(final_features)
     
     return final_features
-    """"print final_features.shape
-    print type(final_features)
-    x = Flatten(name='flatten')(final_features)
-    x = Dense(4096, activation='relu', name='fc1')(x)
-    x = Dense(2, activation='softmax', name='predictions')(x)"""
-    
-#main()
-    
 
