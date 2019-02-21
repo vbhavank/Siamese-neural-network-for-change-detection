@@ -36,8 +36,6 @@ def layman(input_image):
     return x
 
 
-# In[17]:
-
 
 f1 = input('1st Image in quotes')
 f3 = input('2nd Image in quotes')
@@ -50,7 +48,6 @@ f2 = layman(f3)
 f2 /= 255
 
 
-# In[18]:
 
 
 """Class 0 is change class 1 is no change"""
