@@ -21,17 +21,10 @@ import csv
 from keras.models import model_from_json
 
 
-# In[3]:
 
-
-#final_features = feature_extractor('1.tiff','2.tiff')
-#print final_features.shape
-#print type(final_features)
 
 def dataset():
-        #final_features = feature_extractor('1.tiff','2.tiff')
-        #print final_features.shape
-        #print type(final_features)
+
         with open("input1.txt") as csvfile:
             readCSV = csv.reader(csvfile, delimiter = ',')
             #i = 0
@@ -40,22 +33,12 @@ def dataset():
                 img2 = row[1]
                 
                 final_feature = mod(img1,img2)
-                #print final_feature.shape
-                #print type(final_feature)
-                #i = i+1
-                #print i
                 final_features=np.append(final_features,final_feature,axis=0)
-                
-                #print final_features.shape
-                #print type(final_features)
-    
         final_features = tf.convert_to_tensor(final_features)
         return final_features
 
 def dataset_testing():
-        #final_features = feature_extractor('1.tiff','2.tiff')
-        #print final_features.shape
-        #print type(final_features)
+
         with open("input2.txt") as csvfile:
             readCSV = csv.reader(csvfile, delimiter = ',')
             #i = 0
@@ -64,14 +47,9 @@ def dataset_testing():
                 img2 = row[1]
                 
                 final_feature = mod(img1,img2)
-                #print final_feature.shape
-                #print type(final_feature)
-                #i = i+1
-                #print i
+ 
                 final_features=np.append(final_features,final_feature,axis=0)
-                
-                #print final_features.shape
-                #print type(final_features)
+
     
         final_features = tf.convert_to_tensor(final_features)
         return final_features
