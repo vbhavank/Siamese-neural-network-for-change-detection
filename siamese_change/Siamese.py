@@ -6,7 +6,6 @@
 
 
 import keras
-#import cv2
 
 
 # In[42]:
@@ -29,35 +28,9 @@ def siamese_network(input_image):
     x = image.img_to_array(img)
     x = np.expand_dims(x, axis=0)
     x = preprocess_input(x)
-    #print img
-    #print x.shape
+
     feature = model.predict(x)
-    #print feature.shape
-    #print model.summary()
     return feature
-
-#g = siamese_network('1.tiff')
-#print g.shape
-# In[43]:
-
-
-#g = siamese_network('1.tiff')
-#print g.shape
-
-
-# In[33]:
-
-
-
-
-
-# In[38]:
-
-
-
-
-
-# In[ ]:
 
 
 
