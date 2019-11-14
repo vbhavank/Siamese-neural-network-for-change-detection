@@ -30,6 +30,8 @@ Testing
    Do the same for 2nd image chip
 Output will be in command line Change or No change
 Please Cite our work using the bib below.
+
+
 @inproceedings{rahman2018siamese,
   title={Siamese Network with Multi-Level Features for Patch-based Change Detection in Satellite Imagery},
   author={Rahman, Faiz and Vasu, Bhavan and Van Cor, Jared and Kerekes, John and Savakis, Andreas},
