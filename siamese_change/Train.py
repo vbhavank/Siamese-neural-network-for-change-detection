@@ -46,7 +46,7 @@ def dataset_testing():
                 img1 = row[0]
                 img2 = row[1]
                 
-                final_feature = mod(img1,img2)
+                final_feature = model(img1,img2)
  
                 final_features=np.append(final_features,final_feature,axis=0)
 
@@ -107,7 +107,6 @@ def training_part():
     loaded_model_json = json_file.read()
     json_file.close()
     model = model_from_json(loaded_model_json)
-    #model.load_model("model.json")
     model.load_weights("model6.h5")
     names = ['Change', 'No change']
     
